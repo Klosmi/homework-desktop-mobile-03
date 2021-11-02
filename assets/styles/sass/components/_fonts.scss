@@ -1,0 +1,21 @@
+@use "sass:map";
+@use "variables" as *;
+
+//fonts using map
+$font-weight: ("light" : 300, "regular": 400, "medium": 500);
+h1 {
+  font-size: 2rem;
+  font-weight: map.get($font-weight, medium);
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: map.get($font-weight, regular);
+  line-height: 2.2rem;
+}
+p {
+  font-size: 0.85rem;
+  font-weight: map.get($font-weight, light);
+  line-height: 20px;
+}
+
+

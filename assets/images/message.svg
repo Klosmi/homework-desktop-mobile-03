@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="15px" viewBox="0 0 18 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="chat" transform="translate(-953.000000, -591.000000)">
+            <g id="Group-6" transform="translate(514.000000, 112.000000)">
+                <g transform="translate(15.000000, 431.000000)" id="Page-1">
+                    <g transform="translate(424.000000, 48.000000)">
+                        <polygon id="Stroke-1" fill="#E1F4FF" points="17.6226005 8.0363074 15.975218 2.07457629 1.95611411 2.07457629 1.95611411 8.85017182 4.65165534 9.72960437 3.72185143 14.844 3.84864287 14.7592185 9.30186541 9.72960437 15.1834517 8.85017182"></polygon>
+                        <polyline id="Stroke-1" stroke="#2A51E0" stroke-width="0.639999986" stroke-linejoin="bevel" points="17.618105 10.7233826 17.618105 0.514350311 0.460856264 0.514350311 0.460856264 10.4489904 3.04326923 10.4489904 2.38357328 14.4522087 2.52284251 14.3590837 8.15111538 10.4489904 14.4717973 10.4489904"></polyline>
+                        <path d="M3.34895423,3.53064305 L14.5224545,3.53064305" id="Stroke-3" stroke="#2A51E0" stroke-width="0.639999986" stroke-linejoin="bevel"></path>
+                        <path d="M3.72040354,6.45986675 L10.7415155,6.45986675" id="Stroke-4" stroke="#2A51E0" stroke-width="0.639999986" stroke-linejoin="bevel"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

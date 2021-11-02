@@ -1,0 +1,21 @@
+@use "mixins"as *;
+@use "variables"as *;
+@use "fonts"as *;
+@use "buttons"as *;
+@use "sass:map";
+
+.card {
+  @include border (null, 5px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 350px 450px 250px;
+  width: min-content;
+
+  @include breakpoint(mobile) {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    border: none;
+  }
+}

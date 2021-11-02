@@ -1,0 +1,35 @@
+@use "mixins"as *;
+@use "variables"as *;
+@use "fonts"as *;
+@use "sass:map";
+
+.footer__nav {
+  padding: 1rem;
+  text-decoration: underline;
+
+  @include breakpoint(mobile) {
+    @include flex(center, center, row);
+    font-weight: map.get($font-weight, regular);
+    font-size: .7rem;
+
+  }
+
+  &__btn {
+    color: green;
+    padding-left: 3rem;
+
+    @include breakpoint(mobile) {
+      padding: .6rem;
+    }
+
+
+    &:last-child {
+      float: right;
+      padding-right: 1rem;
+
+      @include breakpoint(mobile) {
+        padding: 0;
+      }
+    }
+  }
+}

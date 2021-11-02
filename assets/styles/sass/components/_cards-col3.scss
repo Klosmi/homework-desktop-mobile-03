@@ -1,0 +1,70 @@
+@use "mixins"as *;
+@use "variables"as *;
+@use "fonts"as *;
+@use "buttons"as *;
+@use "sass:map";
+
+// 3rd cards column
+.card__col3 {
+  grid-column: 3;
+  display: grid;
+  grid-template-rows: 2fr 70px;
+
+  @include breakpoint(mobile) {
+    grid-column: 1;
+    grid-row: 2;
+    width: fit-content;
+  }
+}
+
+.card__col3__wrapper {
+  grid-row: 1;
+  padding: 0.5rem;
+  position: relative;
+
+  .card__col3__titles {
+    padding: 10px 0;
+
+    .time-place {
+      @include flex(flex-start, center, row);
+      padding-top: 10px;
+      @include date(null, .6rem);
+      width: 100%;
+
+      .time,
+      .place {
+        padding-right: 10px;
+      }
+
+      .division {
+        width: 1px;
+        background-color: $border;
+        height: 15px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.post-images {
+  @include flex (space-between, center, row);
+  gap: .5rem;
+  padding: 20px 0;
+
+  .post-image {
+    width: 100%;
+  }
+}
+
+.totalcost-block {
+  grid-row: 2;
+  @include border(-top, null);
+  @include flex(center, center, column);
+
+  .totalcost {
+    @include date (inline-block, .8rem);
+    color: $blue;
+    text-decoration: underline;
+    width: max-content;
+  }
+}

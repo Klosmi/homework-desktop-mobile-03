@@ -1,0 +1,53 @@
+@use "variables"as *;
+@use "fonts"as *;
+@use "sass:map";
+
+// flex box
+@mixin flex ($jcontent, $aitems, $direction) {
+  display: flex;
+  justify-content: $jcontent;
+  align-items: $aitems;
+  flex-direction: $direction;
+}
+
+// border
+@mixin border($direction, $radius) {
+  border#{$direction}: 1px solid $border;
+  border-radius: $radius;
+}
+
+// position
+@mixin position ($post-type, $top, $right, $bottom, $left) {
+  position: $post-type;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+// user name styles
+@mixin user-name ($color) {
+  font-size: 0.8rem;
+  font-weight: map.get($font-weight, light);
+  color: $color;
+  padding-left: 10px;
+}
+
+// date and time style
+@mixin date ($display, $font-size) {
+  display: $display;
+  text-align: right;
+  width: 90px;
+  font-size: $font-size;
+  font-weight: map.get($font-weight, light);
+  color: $border;
+}
+
+// responsive mobile
+@mixin breakpoint($point) {
+  @if $point==mobile {
+    @media only screen and (max-width: 450px) {
+      @content;
+    }
+  }
+}

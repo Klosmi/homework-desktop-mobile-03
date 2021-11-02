@@ -1,0 +1,79 @@
+@use "mixins"as *;
+@use "variables"as *;
+@use "fonts"as *;
+@use "buttons"as *;
+@use "sass:map";
+
+// 1st cards column
+.card__col1 {
+  grid-column: 1;
+  @include border (-right, null);
+
+  @include breakpoint(mobile) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .inbox {
+    @include flex (space-between, baseline, row);
+    padding: 1rem;
+    @include border (-bottom, null);
+
+    &__archive {
+      font-size: .7rem;
+      text-decoration: underline;
+      font-weight: map.get($font-weight, light);
+    }
+  }
+}
+
+// user #1 1st column
+.users-col1 {
+  @include flex (space-between, center, row);
+  @include border (-bottom, null);
+  background: lightgrey;
+  padding: 10px;
+
+  @include breakpoint(mobile) {
+    padding: 10px 10px 10px 0;
+  }
+}
+
+.users__user {
+  width: 32px;
+  height: 32px;
+  position: relative;
+}
+
+.users__message {
+  padding-left: 10px;
+  line-height: 20px;
+
+  @include breakpoint(mobile) {
+    padding-left: 35px;
+  }
+}
+
+// user #2 1st column
+.users__date {
+  @include date (inline-block, 0.6rem);
+  //position
+  @include position (relative, -2px, null, null, null);
+
+  &--active {
+    @include position (relative, 8px, null, null, null);
+  }
+}
+
+.users-col1:nth-of-type(odd) {
+  background: none;
+
+  .users__date {
+    //position
+    @include position (relative, -8px, null, null, null);
+
+    &--active {
+      display: none;
+    }
+  }
+}
